@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>React App</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+  </head>
+  <body><input type="text" id="myInput" onkeyup="myFunction()" placeholder="ARAMA" title="Type in a name">
+
+  <table id="MyTable" height={"400"} border={"2"} bordercolor={"Black"} align={"center"}>
+
+    <tr align={"center"}>
+      <td colSpan={"1"}></td>
+      <td colSpan={"1"}><img width={"60"} height={"80"} src={"https://vignette.wikia.nocookie.net/marveldatabase/images/f/f1/Amazing_Spider-Man_Vol_3_1_Granov_Variant_Textless.jpg/revision/latest?cb=20140316144029"}/></td>
+      <td  colSpan={"1"} ><img width={"60"} height={"80"}  src={"https://vignette.wikia.nocookie.net/forgottenrealms/images/a/a6/Drizzt-5e.png/revision/latest?cb=20171222032833"}/> </td>
+      <td  colSpan={"1"} ><img width={"60"} height={"80"}  src={"https://vignette.wikia.nocookie.net/batman/images/7/72/Detective_Comics_Vol_2-19_Cover-1_Teaser.jpg/revision/latest?cb=20130116215324"}/> </td>
+      <td  colSpan={"1"} ><img width={"60"} height={"80"}  src={"https://vignette.wikia.nocookie.net/vikingstv/images/e/ed/Lagertha_5x19.jpg/revision/latest/scale-to-width-down/310?cb=20190131044613"}/> </td>
+    </tr>
+    <tr align={"center"}>
+      <td ><b>Age</b></td>
+      <td bgcolor="#D3D3D3">25</td>
+      <td bgcolor="#D3D3D3">29</td>
+      <td bgcolor="#D3D3D3">52</td>
+      <td bgcolor="#D3D3D3">33</td>
+    </tr>
+    <tr>
+      <td><b>Child Count</b></td>
+      <td bgcolor="#D3D3D3">0</td>
+      <td bgcolor="#D3D3D3">0</td>
+      <td bgcolor="#D3D3D3">2</td>
+      <td bgcolor="#D3D3D3">2</td>
+    </tr>
+    <tr>
+      <td ><b>Citizenship</b></td>
+      <td bgcolor="#D3D3D3">Amerikan</td>
+      <td bgcolor="#D3D3D3" >Menzoberranzanl\u0131</td>
+      <td bgcolor="#D3D3D3">Gothaml\u0131</td>
+      <td bgcolor="#D3D3D3">Kattegatl\u0131</td>
+    </tr>
+    <tr>
+      <td ><b>Employer</b></td>
+      <td bgcolor="#D3D3D3">Daily Bugle</td>
+      <td bgcolor="#D3D3D3">Do'Urden House</td>
+      <td bgcolor="#D3D3D3">Wayne Enterprises</td>
+      <td bgcolor="#D3D3D3">House of Lothbrok</td>
+    </tr>
+    <tr>
+      <td ><b>EmploymentStartDate</b></td>
+      <td bgcolor="#D3D3D3" >01-01-2019</td>
+      <td bgcolor="#D3D3D3">01-01-2010</td>
+      <td bgcolor="#D3D3D3">01-01-2010</td>
+      <td bgcolor="#D3D3D3">01-01-2006</td>
+    </tr>
+    <tr>
+      <td><b>EmploymentTerminationDate</b></td>
+      <td bgcolor="#D3D3D3">null</td>
+      <td bgcolor="#D3D3D3">01-01-2016</td>
+      <td bgcolor="#D3D3D3">01-01-2018</td>
+      <td bgcolor="#D3D3D3">null</td>
+    </tr>
+    <tr>
+      <td><b>FirstName</b></td>
+      <td bgcolor="#D3D3D3">Peter</td>
+      <td bgcolor="#D3D3D3">Drizzt</td>
+      <td bgcolor="#D3D3D3">Bruce</td>
+      <td bgcolor="#D3D3D3">Lagertha</td>
+    </tr>
+    <tr>
+      <td><b>Gender</b></td>
+      <td bgcolor="#D3D3D3">Erkek</td>
+      <td bgcolor="#D3D3D3">Erkek</td>
+      <td bgcolor="#D3D3D3">Erkek</td>
+      <td bgcolor="#D3D3D3">Kadın</td>
+    </tr>
+    <tr>
+      <td><b>HireDate</b></td>
+      <td bgcolor="#D3D3D3">01-01-2019</td>
+      <td bgcolor="#D3D3D3">01-01-2010</td>
+      <td bgcolor="#D3D3D3">01-01-2010</td>
+      <td bgcolor="#D3D3D3">01-01-2006</td>
+    </tr>
+    <tr>
+      <td><b>LastName</b></td>
+      <td bgcolor="#D3D3D3">Parker</td>
+      <td bgcolor="#D3D3D3">Do'Urden</td>
+      <td bgcolor="#D3D3D3">Wayne</td>
+      <td bgcolor="#D3D3D3">Lothbrok</td>
+    </tr>
+    <tr>
+      <td><b>MaritalStatus</b></td>
+      <td bgcolor="#D3D3D3">Bekar</td>
+      <td bgcolor="#D3D3D3">Bekar</td>
+      <td bgcolor="#D3D3D3">Bekar</td>
+      <td bgcolor="#D3D3D3">Evli</td>
+    </tr>
+    <tr>
+      <td><b>Profession</b></td>
+      <td bgcolor="#D3D3D3">Fotograf\u00e7\u0131</td>
+      <td bgcolor="#D3D3D3">Avc\u0131</td>
+      <td bgcolor="#D3D3D3">Şirket Sahibi</td>
+      <td bgcolor="#D3D3D3">\u00c7ift\u00e7i</td>
+    </tr>
+    <tr>
+      <td><b>Retired</b></td>
+      <td bgcolor="#D3D3D3">False</td>
+      <td bgcolor="#D3D3D3">False</td>
+      <td bgcolor="#D3D3D3">True</td>
+      <td bgcolor="#D3D3D3">False</td>
+    </tr>
+    <tr>
+      <td><b>Salary</b></td>
+      <td bgcolor="#D3D3D3">2000.0</td>
+      <td bgcolor="#D3D3D3">1000.0</td>
+      <td bgcolor="#D3D3D3">200000.0</td>
+      <td bgcolor="#D3D3D3">1800.0</td>
+    </tr>
+    <tr>
+      <td><b>SalaryCurrency</b></td>
+      <td bgcolor="#D3D3D3">Dolar</td>
+      <td bgcolor="#D3D3D3">Dolar</td>
+      <td bgcolor="#D3D3D3">Dolar</td>
+      <td bgcolor="#D3D3D3">Dolar</td>
+    </tr>
+    <tr>
+      <td><b>SalaryPeriod</b></td>
+      <td bgcolor="#D3D3D3">Ayl\u0131k</td>
+      <td bgcolor="#D3D3D3">Saatlik</td>
+      <td bgcolor="#D3D3D3">G\u00fcnl\u00fck</td>
+      <td bgcolor="#D3D3D3">Ayl\u0131k</td>
+    </tr>
+  </table>
+
+  <script>
+    function myFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("MyTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+  <canvas id="görsel"></canvas>
+  <script>
+    var ctx= document.getElementById('görsel').getContext('2d');
+    var görsel = new Chart(ctx,{
+      type:'pie',
+      data:{
+        labels:['Peter Parker','Dizzt Do Under','Bruce Wayne','Lagertha Lothbrok'],
+        datasets:[{
+          label:'AGE',
+          backgroundColor:'rgb(167,166,255)',
+          borderColor:'rgb(230,255,77)',
+          data:[25,29,52,33]
+
+        }]
+      },
+      options:{}
+
+
+    })
+  </script>
+
+
+  <div id="root">
+
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
